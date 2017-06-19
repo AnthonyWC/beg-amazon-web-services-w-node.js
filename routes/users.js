@@ -38,7 +38,7 @@ router.post('/login', function(req, res) {
 
 		model.loginUser(params, function(err, obj){
 			if(err){
-				res.status(400).send({error: 'Invalid login'});
+				res.status(400).send({error: 'Invalid login: ' + err});
 			} else {
 				res.send(obj);
 			}
