@@ -1,0 +1,30 @@
+{
+    "Statement": [
+        {
+            "Action": [
+                "cloudwatch:GetMetricStatistics",
+                "ec2:DescribeAccountAttributes",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeInstances",
+                "ec2:DescribeKeyPairs",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "elasticloadbalancing:DescribeInstanceHealth",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "iam:GetRolePolicy",
+                "iam:ListInstanceProfiles",
+                "iam:ListRoles",
+                "iam:ListUsers",
+                "iam:PassRole",
+                "opsworks:*",
+                "rds:*"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "*"
+            ]
+        }
+    ],
+    "Version": "2012-10-17"
+}
